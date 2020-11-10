@@ -37,18 +37,16 @@ Implement a higher-order function called `getYears` that accepts the callback fu
 and returns an array called `years` containing all of the years in the dataset */
 
 function getYears(callback) {
-    const years = [];
-
-     callback.forEach(function(fifaData){
-        years.push([item.Year])
-        }); return years 
+   const years = fifaData.map(function(item){
+    return item.Year;
+    }); return years ;
 }
-// const years = fifaData.map(function(item){
-//     return CB['Year']
-//     }); return years 
-// }
+// const years = [];
 
-console.log('getYears(CB): ', getYears(getFinals));
+    //  callback.forEach(function(item){
+    //     years.push([item.Year])
+    //     }); return years 
+//console.log('getYears(getfinals): ', getYears(getFinals(fifaData)));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀

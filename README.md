@@ -103,5 +103,5 @@ Win conditions": "France win on penalties (3 - 4)",
 
 Follow these steps for completing your project.
 
-- [ ] Submit a pull request to merge Branch into master (student's Repo). Please don't merge your own pull request.
+- [X] Submit a pull request to merge Branch into master (student's Repo). Please don't merge your own pull request.
 
