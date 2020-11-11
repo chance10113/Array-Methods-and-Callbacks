@@ -101,18 +101,25 @@ and returns the the average number of home team goals and away team goals scored
 (Hint: use .reduce and do this in 2 steps) */
 
 function getAverageGoals(data) {
+/*
+    const totalTeamGoals = data.reduce(function(accumulator,item){
+
+        return accumulator + item["Home Team Goals"] + item["Away Team Goals"]
+    },0)
+    return (totalTeamGoals / data.length).toFixed(2)
+}
+*/
+
+
+
     const averageHomeGoals = data.reduce(function (accumulator, item) {
         return accumulator + item["Home Team Goals"];
     }, 0);
     const averageAwayGoals = data.reduce(function (accumulator, item) {
         return accumulator + item["Away Team Goals"];
     }, 0);
-     return `${((averageHomeGoals / data.length) + (averageAwayGoals / data.length))}`;   
-    }
-
-
-
-
+     return  `${((averageHomeGoals / data.length) + (averageAwayGoals / data.length)).toFixed(2)}`;
+    } 
 
 console.log('getAverageGoals(data): ', getAverageGoals(fifaData));
 
